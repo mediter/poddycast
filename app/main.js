@@ -21,7 +21,7 @@ const gotTheLock = app.requestSingleInstanceLock()
 
 // Load proper icon for specific platform
 if (process.platform === 'darwin' || process.platform === 'linux') {
-    trayIcon = path.join(__dirname, './img/poddycast-app_icon.png')
+    trayIcon = path.join(__dirname, './img/poddycast-tray_icon.png')
 } else if (process.platform == 'win32') {
     trayIcon = path.join(__dirname, './img/poddycast-app_icon.ico')
 }
